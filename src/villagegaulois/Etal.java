@@ -5,7 +5,12 @@ import personnages.Gaulois;
 public class Etal {
 	private Gaulois vendeur;
 	private String produit;
+	
 	private int quantiteDebutMarche;
+	public int getQuantiteDebutMarche() {
+		return quantiteDebutMarche;
+	}
+
 	private int quantite;
 	private boolean etalOccupe = false;
 
