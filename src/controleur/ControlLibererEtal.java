@@ -29,17 +29,10 @@ public class ControlLibererEtal {
 		
 	}
 	public String[] libererEtal(String nomVendeur) {
-		//TODO a completer
-		
-		String[] donneesEtal = new String[5];
-		Etal etal=controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);
-		donneesEtal[0]=((Boolean)etal.isEtalOccupe()).toString();
-		donneesEtal[1]=etal.getVendeur().getNom();
-		donneesEtal[2]=etal.getProduit();
-		donneesEtal[3]=((Integer)etal.getQuantiteDebutMarche()).toString();
-		donneesEtal[4]=((Integer)etal.getQuantite()).toString();
 
 		
+		Etal etal=controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);
+		String[] donneesEtal =etal.etatEtal();
 		
 		return donneesEtal;
 	}
